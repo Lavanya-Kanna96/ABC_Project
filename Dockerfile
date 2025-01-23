@@ -7,5 +7,5 @@ RUN cd /tmp &&  tar xvfz apache-tomcat-9.0.98.tar.gz
 RUN cp -Rv /tmp/apache-tomcat-9.0.98/* /usr/local/tomcat/
 RUN rm /tmp/apache-tomcat-9.0.98.tar.gz
 ADD target/ABCtechnologies-1.0.war /usr/local/tomcat/webapps/
-EXPOSE 8081
+EXPOSE 8090
 CMD /usr/local/tomcat/bin/catalina.sh run
